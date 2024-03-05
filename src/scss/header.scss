@@ -6,16 +6,51 @@ body{
   background-color: $body-color;
 }
 
+a{
+  text-decoration: none;
+  outline: none;
+  color: $key-color;
+  &:hover,&:active{
+    text-decoration: none;
+    color: $key-color;
+  }
+}
+
 header{
   padding: 50px 150px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: $key-color;
+  .header__logo{
+    width: 64px;
+  }
   .header__menu{
     display: flex;
     gap: 30px;
     > li {
-      
+      font-size: 20px;
+      border-radius: 50px;
+      padding: 10px 15px;
+    }
+    .header__menu--on{
+      border: 1px solid $key-color;
+    }
+  }
+  .weather{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    gap: 10px;
+    .weather__date{
+      letter-spacing: 2px;
+      font-size: 20px;
+    }
+    .weather__temper{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 24px;
     }
   }
 }
