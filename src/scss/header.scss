@@ -1,0 +1,21 @@
+$key-color: #063DCC;
+$body-color: #FFFEEE;
+
+body{
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: $body-color;
+}
+
+header{
+  padding: 50px 150px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header__menu{
+    display: flex;
+    gap: 30px;
+    > li {
+      
+    }
+  }
+}
