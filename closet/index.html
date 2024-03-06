@@ -11,14 +11,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
   <!-- <link rel="stylesheet" href="/Users/jang/Desktop/2024 패스트캠퍼스/사이드프로젝트/clothes-selection/src/scss"> -->
   <link rel="stylesheet" href="/src/scss/closet_option.scss">
+  <script src="/src/js/closet/Option.js" defer></script>
 </head>
 
 <body>
   <section class="clothes-selector--large">
     <section class="closet__option">
-      <button class="add_button">옷 추가하기</button>
-      <button class="select_button">옷 선택하기</button>
+      <button class="button add__button">옷 추가하기</button>
+      <button class="button remove__button">옷 삭제하기</button>
     </section>
+    <section class="container add__container">
+      <div class="container__top">
+        <img src="/clothes_svg/coat.svg" alt="coat" width="100px" height="100px">
+        <div class="clothes__choice">
+          <span class="choice main__category">상위 카테고리</span>
+          <span class="choice sub__category">하위 카테고리</span>
+          <span class="choice clothes--color">색깔</span>
+        </div>
+      </div>
+      <div class="container__bottom">
+        <input type="text" placeholder="옷 이름">
+        <input type="text" placeholder="옷 설명">
+      </div>
+    </section>
+    <section class="container remove__container"></section>
   </section>
 </body>
 
